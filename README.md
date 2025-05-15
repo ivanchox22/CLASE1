@@ -39,17 +39,23 @@ En una máquina CNC, el sistema de transmisión debe garantizar:
   
    - Fórmula completa:
   
-     \[ T_{\text{total}} = T_{\text{static}} + J_{\text{total}} \cdot \alpha \]
+     $T_{\text{total}} = T_{\text{static}} + J_{\text{total}}$
+     
      Donde α es la aceleración angular requerida
 
 3. **Inercia equivalente:**
    - La inercia total vista por el motor afecta directamente:
+  
      - Tiempos de respuesta
+
      - Consumo energético
+
      - Estabilidad del control
 
 4. **Margen de seguridad recomendado:**
+
    - 20-30% para aplicaciones generales
+  
    - Hasta 50% en aplicaciones críticas o con cargas variables
 
 **Ejemplo ampliado:**
@@ -64,7 +70,7 @@ Para un sistema que requiere:
 
 Cálculo:
 
-\[ T_{\text{req}} = (5 + 3) \times 1.3 = 10.4 \, \text{Nm} \]
+$T_{\text{req}} = (5 + 3) \times 1.3 = 10.4 \, \text{Nm}$
 
 **Tabla de selección típica:**
 
@@ -77,6 +83,7 @@ Cálculo:
 ---
 
 ### 2.2 Tipos de Problemas de Diseño  
+
 **Profundización en cada caso:**
 
 **Caso 1: Diseño completo**
@@ -109,15 +116,15 @@ Datos:
 Solución:
 1. Ecuación de relación de inercia:
 
-   \[ 5 \geq \frac{J_{\text{ref}} + J_{\text{acople}}}}{1.5 \times 10^{-5}} \]
+   $frac{J_{\text{ref}} + J_{\text{acople}}}}{1.5 \times 10^{-5}}$
    
 3. Asumiendo Jacople ≈ 0.5×10⁻⁵ kg·m²:
 
-   \[ J_{\text{ref}} \leq 7 \times 10^{-5} \, \text{kg·m}^2 \]
+   $J_{\text{ref}} \leq 7 \times 10^{-5} \, \text{kg·m}^2$
    
 5. Despejando relación de engranajes:
 
-   \[ N_{\text{GB}} \geq \sqrt{\frac{10^{-4}}{0.97 \times 7 \times 10^{-5}}} \approx 1.2 \]
+   4N_{\text{GB}} \geq \sqrt{\frac{10^{-4}}{0.97 \times 7 \times 10^{-5}}} \approx 1.2$
    
 7. Seleccionar NGB = 2 como mínimo práctico
 
@@ -127,34 +134,50 @@ Solución:
 **Teoría avanzada:**
 
 **Inercia reflejada:**
+
 - Concepto fundamental en dinámica de sistemas
+
 - Análogo rotacional a la masa equivalente en sistemas lineales
+
 - Depende cuadráticamente de la relación de transmisión
 
 **Torque equivalente:**
+
 - Incluye componentes:
+
   - Torque de aceleración
+ 
   - Torque por fricción
+ 
+
   - Torque gravitacional (en ejes verticales)
 
 **Ejemplo completo:**
+
 Sistema con:
+
 - Carga: 50 Nm (Tl)
+
 - Eficiencia: 97%
+
 - Relación: 5:1
+
 - Inercia carga: 0.1 kg·m²
+
 - Aceleración deseada: 100 rad/s²
 
 Cálculos:
-1. Torque reflejado:
-2. 
-   \[ T_m = \frac{50}{0.97 \times 5} + \frac{0.1}{5^2} \times 100 \approx 10.3 + 0.4 = 10.7 \, \text{Nm} \]
 
-3. Potencia requerida a 1000 rpm:
-4. 
-   \[ P = 10.7 \times \frac{1000 \times 2\pi}{60} \approx 1.12 \, \text{kW} \]
+1. Torque reflejado:
+
+$T_m = \frac{50}{0.97 \times 5} + \frac{0.1}{5^2} \times 100 \approx 10.3 + 0.4 = 10.7 \, \text{Nm}$
+
+2. Potencia requerida a 1000 rpm:
+
+   $P = 10.7 \times \frac{1000 \times 2\pi}{60} \approx 1.12 \, \text{kW}$
 
 **Diagrama de cuerpo libre rotacional:**
+
 ```mermaid
 graph TD
     Tm[Torque motor] -->|NGB| Tl[Torque carga]
