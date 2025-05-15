@@ -321,17 +321,13 @@ $T_{seguridad} = T_{motor} \times 1.25 = 5.29 \times 1.25 \approx 6.61 \, \text{
 
 ## Referencias
 
-1. **Vallery, H. & van Dijk, J.** (2020). *Control of Motion Systems*. Elsevier.  
-   *Capítulos 4 y 5*: Modelado dinámico y selección de actuadores.
+1. **Vallery, H. & van Dijk, J.** (2020). *Control of Motion Systems*. Elsevier.  *Capítulos 4 y 5*: Modelado dinámico y selección de actuadores.
 
-2. **Beards, C.** (1996). *Dynamics of Mechanical Systems*. CRC Press.  
-   *Sección 8.3*: Inercia equivalente en sistemas rotacionales.
+2. **Beards, C.** (1996). *Dynamics of Mechanical Systems*. CRC Press.  *Sección 8.3*: Inercia equivalente en sistemas rotacionales.
 
-3. **MathWorks** (2023). *Documentación de Simscape Multibody*.  
-   *Tutoriales*: "Modelado de transmisiones mecánicas".
+3. **MathWorks** (2023). *Documentación de Simscape Multibody*.  *Tutoriales*: "Modelado de transmisiones mecánicas".
 
-4. **Apex Dynamics** (2023). *Catálogo de Engranajes*.  
-   *Tablas de eficiencia y curvas de vida útil* para engranajes planetarios.
+4. **Apex Dynamics** (2023). *Catálogo de Engranajes*.  *Tablas de eficiencia y curvas de vida útil* para engranajes planetarios.
 
 5. **Bolton, W.** (2015). *Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering* (6th ed.). Pearson Education.
 
