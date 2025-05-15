@@ -166,6 +166,72 @@ graph TD
 ```
 ---
 
+### 3. Consideraciones Avanzadas
+
+#### 3.1 Análisis de Eficiencia 
+
+**Factores que afectan η:**  
+
+- Tipo de engranajes (rectos, helicoidales, planetarios)
+
+- Materiales y lubricación
+
+- Velocidad de operación  
+
+**Tabla comparativa:**  
+
+| Tipo Transmisión      | Eficiencia típica |  
+|-----------------------|------------------|  
+| Engranajes rectos     | 93-97%           |  
+| Engranajes helicoidales | 95-98%         |  
+| Tornillo sin fin      | 30-90%           |  
+| Poleas/correas        | 95-98%           |  
+
+#### 3.2 Backlash y Precisión  
+
+**Técnicas de compensación:** 
+
+- Engranajes anti-backlash
+
+- Control por torque + posición
+
+- Algoritmos de compensación en software  
+
+**Ecuación de error posicional:**  
+
+ $θ_error = Backlash / N_GB$
+
+ 
+#### 3.3 Simulación Avanzada  
+**Modelado en Simscape Multibody:**
+
+```
+% Sistema completo motor-transmisión-carga
+sys = 'motor_transmission_load';
+open_system(sys);
+
+% Configuración de parámetros
+set_param([sys '/Gearbox'], 'Ratio', '5');
+set_param([sys '/Gearbox'], 'Efficiency', '0.97');
+
+% Análisis modal
+modalAnalysis(sys);
+
+% Simulación temporal
+simOut = sim(sys, 'StopTime', '10');
+
+```
+
+### Resultados típicos a analizar:
+
+- **Respuesta al escalón**
+
+- **Análisis de frecuencia**
+
+- **Pérdidas por fricción**
+
+- **Distribución de cargas**  
+
 ## 4. Ejercicios Propuestos
 
 ### Ejercicio 1: Selección de Motor
