@@ -303,27 +303,19 @@ $T_{seguridad} = T_{motor} \times 1.25 = 5.29 \times 1.25 \approx 6.61 \, \text{
 
 ## 5. Conclusiones 
 
-- El diseño adecuado de transmisiones es crucial para garantizar precisión, eficiencia energética y robustez en sistemas de control de movimiento.
+- El diseño adecuado de transmisiones constituye un pilar fundamental en ingeniería mecatrónica, ya que impacta directamente en tres aspectos clave: la precisión micrométrica requerida en aplicaciones CNC, la eficiencia energética que determina costos operativos a largo plazo, y la robustez necesaria para entornos industriales exigentes. Un sistema bien diseñado puede marcar la diferencia entre una operación confiable y fallos costosos.
 
-- Factores como la inercia reflejada, el torque dinámico y la eficiencia mecánica determinan el rendimiento global del sistema.
+-  Más allá de los parámetros básicos, la inercia reflejada afecta la capacidad de respuesta en cambios de velocidad bruscos, mientras que el torque dinámico debe calcularse considerando los picos de aceleración en perfiles S-curve. La eficiencia mecánica, frecuentemente subestimada, puede generar pérdidas acumulativas significativas en sistemas que operan continuamente.
 
-- El torque del motor debe considerar tanto el torque estático (fricción) como el dinámico (aceleración), aplicando un margen de seguridad (20-50%) según la aplicación.
+- La especificación del torque motor debe incluir un análisis exhaustivo que contemple no solo la fricción estática inicial, sino también los requerimientos dinámicos durante cambios de velocidad, con márgenes de seguridad que varían desde el 20% para aplicaciones estables hasta el 50% en entornos con cargas impredecibles o ciclos de trabajo intensivos.
 
-- La inercia equivalente afecta la estabilidad y respuesta del sistema, por lo que debe minimizarse para optimizar tiempos de posicionamiento.
+- La inercia equivalente, como parámetro dinámico clave, influye directamente en la constante de tiempo del sistema. Su minimización estratégica mediante selección de materiales y relaciones de transmisión adecuadas puede mejorar hasta en un 40% los tiempos de posicionamiento en aplicaciones de alta velocidad.
 
-- En el diseño completo, es esencial definir perfiles de movimiento (trapezoidal, S-curve) y seleccionar motores con capacidad suficiente (torque RMS y pico).
+- El proceso de diseño completo exige la definición precisa de perfiles de movimiento, donde la elección entre trapezoidal y S-curve afecta tanto el desgaste mecánico como el consumo energético. La selección de motores debe basarse en análisis de torque RMS para operación continua y torque pico para condiciones transitorias.
 
-- En la validación de sistemas existentes, se deben analizar resonancias, sobrecalentamiento y márgenes de seguridad mediante simulación.
+- La validación de sistemas existentes requiere simulaciones multifísicas que identifiquen no solo resonancias mecánicas, sino también patrones de distribución térmica que podrían limitar la vida útil de los componentes. El análisis de márgenes de seguridad debe considerar escenarios de fallo múltiple.
 
-- La eficiencia de la transmisión varía según el tipo (engranajes helicoidales: 95-98%, tornillo sinfín: 30-90%), afectando el consumo energético.
-
-- El backlash introduce errores de posicionamiento, que pueden mitigarse con engranajes anti-backlash o compensación en software.
-
-- Herramientas como Simscape Multibody permiten modelar y simular la dinámica completa del sistema antes de la implementación física.
-
-- Los cálculos de torque reflejado y potencia demuestran que la relación de transmisión y la eficiencia impactan directamente en la selección del motor.
-
-- Incluir márgenes de seguridad (25-30%) asegura que el sistema opere correctamente bajo condiciones variables o cargas imprevistas.
+- La variabilidad en eficiencia entre distintos tipos de transmisión (desde el 30% en sistemas de tornillo sinfín hasta 98% en engranajes planetarios de precisión) tiene implicaciones directas en el dimensionamiento de fuentes de alimentación y sistemas de refrigeración, con impacto económico significativo en operación continua.
 
 ## 6. Referencias Bibliográficas  
 
