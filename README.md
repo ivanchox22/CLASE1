@@ -168,27 +168,7 @@ graph TD
 
 ## 4. Ejercicios Propuestos
 
-### Ejercicio 1: Cálculo de Inercia Reflejada
-
-**Enunciado:**  
-Un motor con inercia $J_m = 2 \times 10^{-5} \, \text{kg·m}^2$ mueve una carga de $J_{\text{load}} = 8 \times 10^{-4} \, \text{kg·m}^2$ mediante un engranaje con relación $N_{\text{GB}} = 4$ y eficiencia $eta = 0.95$. Calcule la relación de inercia $J_R$
-
-**Solución:**  
-1. **Cálculo de inercia reflejada:**  
-   
-   $J_{\text{ref}} = \frac{J_{\text{load}}}{\eta \cdot N_{\text{GB}}^2} = \frac{8 \times 10^{-4}}{0.95 \times 16} \approx 5.26 \times 10^{-5} \, \text{kg·m}^2$
-
-2. **Cálculo de \( J_R \):**  
-
-   $J_R = \frac{J_{\text{ref}} + J_{\text{on motor shaft}}}}{J_m} \approx \frac{5.26 \times 10^{-5} + 2 \times 10^{-5}}{2 \times 10^{-5}}$
-
-**Conclusión:**
-
-La relación de inercia \( J_R \approx 3.63 \) cumple con el rango recomendado (\( J_R \leq 5 \)) para movimientos dinámicos.
-
----
-
-### Ejercicio 2: Selección de Motor
+### Ejercicio 1: Selección de Motor
  
 **Enunciado:**
 
