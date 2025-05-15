@@ -9,7 +9,7 @@ El diseño de transmisiones en sistemas de control de movimiento es una discipli
 - **Precisión de movimiento:** Capacidad del sistema para alcanzar posiciones deseadas sin error
 
 - **Dinámica del sistema:** Respuesta temporal ante cambios en la referencia
-
+ 
 - **Eficiencia energética:** Minimización de pérdidas por fricción y otros factores
 
 - **Robustez:** Capacidad de mantener el desempeño bajo variaciones de carga y condiciones ambientales
