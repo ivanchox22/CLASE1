@@ -200,7 +200,7 @@ Un sistema de elevación requiere un torque de 18 Nm a 150 rpm en el eje de sali
 2. La potencia requerida por el motor
 3. El torque con un margen de seguridad del 25%
 
-###Solución:
+### Solución:
 
 ### 1. Torque mínimo en el motor
 
