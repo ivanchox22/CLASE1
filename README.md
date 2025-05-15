@@ -103,31 +103,6 @@ $T_{\text{req}} = (5 + 3) \times 1.3 = 10.4 \, \text{Nm}$
 
 - Analizar puntos críticos (sobrecalentamiento, resonancias)
 
-**Ejemplo detallado (Tipo 3):**
-
-Datos:
-
-- Motor: NEMA 23, Jm = 1.5×10⁻⁵ kg·m²
-
-- Carga: Jload = 10⁻⁴ kg·m²
-
-- Requisito: JR ≤ 5
-
-Solución:
-1. Ecuación de relación de inercia:
-
-   $frac{J_{\text{ref}} + J_{\text{acople}}}}{1.5 \times 10^{-5}}$
-    
-3. Asumiendo Jacople ≈ 0.5×10⁻⁵ kg·m²:
-
-   $J_{\text{ref}} \leq 7 \times 10^{-5} \, \text{kg·m}^2$
-   
-5. Despejando relación de engranajes:
-
-   4N_{\text{GB}} \geq \sqrt{\frac{10^{-4}}{0.97 \times 7 \times 10^{-5}}} \approx 1.2$
-   
-7. Seleccionar NGB = 2 como mínimo práctico
-
 ---
 
 ### 2.3 Inercia y Torque Reflejado  
@@ -148,7 +123,6 @@ Solución:
   - Torque de aceleración
  
   - Torque por fricción
- 
 
   - Torque gravitacional (en ejes verticales)
 
