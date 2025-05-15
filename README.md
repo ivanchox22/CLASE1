@@ -204,29 +204,32 @@ Un sistema de elevación requiere un torque de 18 Nm a 150 rpm en el eje de sali
 
 ### 1. Torque mínimo en el motor
 
-\[ T_{motor} = \frac{T_{salida}}{\eta \times N} = \frac{18}{0.85 \times 4} \]
+$T_{motor} = \frac{T_{salida}}{\eta \times N} = \frac{18}{0.85 \times 4}$
 
-\[ T_{motor} = \frac{18}{3.4} \approx 5.29 \, \text{Nm} \]
+$T_{motor} = \frac{18}{3.4} \approx 5.29 \, \text{Nm}$
 
 ### 2. Potencia requerida
 
 Primero calculamos la velocidad angular del motor (ω):
 
-\[ \omega_{motor} = \omega_{salida} \times N = \left( \frac{150 \times 2\pi}{60} \right) \times 4 \]
-\[ \omega_{motor} = 15.708 \times 4 = 62.832 \, \text{rad/s} \]
+$omega_{motor} = \omega_{salida} \times N = \left( \frac{150 \times 2\pi}{60} \right) \times 4$
+
+$omega_{motor} = 15.708 \times 4 = 62.832 \, \text{rad/s}$
 
 Ahora calculamos la potencia:
 
-\[ P = T_{motor} \times \omega_{motor} = 5.29 \times 62.832 \approx 332.4 \, \text{W} \]
+$P = T_{motor} \times \omega_{motor} = 5.29 \times 62.832 \approx 332.4 \, \text{W}$
 
 ### 3. Torque con margen de seguridad
 
-\[ T_{seguridad} = T_{motor} \times 1.25 = 5.29 \times 1.25 \approx 6.61 \, \text{Nm} \]
+$T_{seguridad} = T_{motor} \times 1.25 = 5.29 \times 1.25 \approx 6.61 \, \text{Nm}$
 
 ### Consideraciones adicionales:
 
 - La eficiencia de la transmisión afecta directamente el torque requerido
+
 - El margen de seguridad es recomendable para cubrir picos de carga
+
 - La potencia calculada es la mínima teórica, en la práctica se debe seleccionar un motor con mayor capacidad
 
 ---
