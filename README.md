@@ -162,7 +162,7 @@ Sistema con:
 
 - Relación: 5:1
 
-- Inercia carga: 0.1 kg·m²
+- Inercia carga: 0.1 kg·m² 
 
 - Aceleración deseada: 100 rad/s²
 
