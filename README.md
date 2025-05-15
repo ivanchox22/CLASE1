@@ -190,6 +190,47 @@ $T_m = \frac{T_{\text{load}}}{\eta \cdot N_{\text{GB}}} = \frac{12}{0.9 \times 3
 
 ---
 
+## Ejercicio 2: Cálculo de Torque y Potencia del Motor
+
+### Enunciado:
+
+Un sistema de elevación requiere un torque de 18 Nm a 150 rpm en el eje de salida. La transmisión tiene una relación de reducción (N) = 4 y una eficiencia (η) = 0.85. Determine:
+
+1. El torque mínimo requerido en el motor
+2. La potencia requerida por el motor
+3. El torque con un margen de seguridad del 25%
+
+###Solución:
+
+### 1. Torque mínimo en el motor
+
+\[ T_{motor} = \frac{T_{salida}}{\eta \times N} = \frac{18}{0.85 \times 4} \]
+
+\[ T_{motor} = \frac{18}{3.4} \approx 5.29 \, \text{Nm} \]
+
+### 2. Potencia requerida
+
+Primero calculamos la velocidad angular del motor (ω):
+
+\[ \omega_{motor} = \omega_{salida} \times N = \left( \frac{150 \times 2\pi}{60} \right) \times 4 \]
+\[ \omega_{motor} = 15.708 \times 4 = 62.832 \, \text{rad/s} \]
+
+Ahora calculamos la potencia:
+
+\[ P = T_{motor} \times \omega_{motor} = 5.29 \times 62.832 \approx 332.4 \, \text{W} \]
+
+### 3. Torque con margen de seguridad
+
+\[ T_{seguridad} = T_{motor} \times 1.25 = 5.29 \times 1.25 \approx 6.61 \, \text{Nm} \]
+
+### Consideraciones adicionales:
+
+- La eficiencia de la transmisión afecta directamente el torque requerido
+- El margen de seguridad es recomendable para cubrir picos de carga
+- La potencia calculada es la mínima teórica, en la práctica se debe seleccionar un motor con mayor capacidad
+
+---
+
 ## 5. Referencias Bibliográficas  
 
 1. **Vallery, H. & van Dijk, J.** (2020). *Control of Motion Systems*. Elsevier.  
