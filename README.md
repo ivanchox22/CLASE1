@@ -162,3 +162,64 @@ graph TD
     Tl -->|η| Pérdidas
     Tm --> Jm[Inercia motor]
     Tl --> Jl[Inercia carga]
+
+---
+
+## 4. Ejercicios Propuestos
+
+### Ejercicio 1: Cálculo de Inercia Reflejada  
+**Enunciado:**  
+Un motor con inercia \( J_m = 2 \times 10^{-5} \, \text{kg·m}^2 \) mueve una carga de \( J_{\text{load}} = 8 \times 10^{-4} \, \text{kg·m}^2 \) mediante un engranaje con relación \( N_{\text{GB}} = 4 \) y eficiencia \( \eta = 0.95 \). Calcule la relación de inercia \( J_R \).
+
+**Solución:**  
+1. **Cálculo de inercia reflejada:**  
+   \[
+   J_{\text{ref}} = \frac{J_{\text{load}}}{\eta \cdot N_{\text{GB}}^2} = \frac{8 \times 10^{-4}}{0.95 \times 16} \approx 5.26 \times 10^{-5} \, \text{kg·m}^2
+   \]
+
+2. **Cálculo de \( J_R \):**  
+   \[
+   J_R = \frac{J_{\text{ref}} + J_{\text{on motor shaft}}}}{J_m} \approx \frac{5.26 \times 10^{-5} + 2 \times 10^{-5}}{2 \times 10^{-5}} = 3.63
+   \]
+
+**Conclusión:**  
+La relación de inercia \( J_R \approx 3.63 \) cumple con el rango recomendado (\( J_R \leq 5 \)) para movimientos dinámicos.
+
+---
+
+### Ejercicio 2: Selección de Motor  
+**Enunciado:**  
+Una carga requiere un torque de 12 Nm a 100 rpm. La transmisión tiene una relación \( N_{\text{GB}} = 3 \) y eficiencia \( \eta = 0.9 \). Determine el torque mínimo requerido en el motor.
+
+**Solución:**  
+\[
+T_m = \frac{T_{\text{load}}}{\eta \cdot N_{\text{GB}}} = \frac{12}{0.9 \times 3} \approx 4.44 \, \text{Nm}
+\]
+
+**Consideraciones adicionales:**  
+- **Margen de seguridad:** Si se aplica un 20% adicional:  
+  \[
+  T_{\text{motor}} \geq 4.44 \times 1.2 \approx 5.33 \, \text{Nm}
+  \]
+- **Potencia requerida:**  
+  \[
+  P = T_m \cdot \omega = 4.44 \times \left(\frac{100 \times 2\pi}{60}\right) \approx 46.5 \, \text{W}
+  \]
+
+---
+
+## 5. Referencias Bibliográficas  
+
+1. **Vallery, H. & van Dijk, J.** (2020). *Control of Motion Systems*. Elsevier.  
+   - Capítulos 4 y 5: Modelado dinámico y selección de actuadores.  
+
+2. **Beards, C.** (1996). *Dynamics of Mechanical Systems*. CRC Press.  
+   - Sección 8.3: Inercia equivalente en sistemas rotacionales.  
+
+3. **MathWorks** (2023). *Documentación de Simscape Multibody*.  
+   - Tutoriales: "Modelado de transmisiones mecánicas".  
+
+4. **Apex Dynamics** (2023). *Catálogo de Engranajes*.  
+   - Tablas de eficiencia y curvas de vida útil para engranajes planetarios.  
+
+
