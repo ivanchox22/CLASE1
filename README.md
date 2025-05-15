@@ -167,44 +167,45 @@ graph TD
 
 ## 4. Ejercicios Propuestos
 
-### Ejercicio 1: Cálculo de Inercia Reflejada  
+### Ejercicio 1: Cálculo de Inercia Reflejada
+
 **Enunciado:**  
-Un motor con inercia \( J_m = 2 \times 10^{-5} \, \text{kg·m}^2 \) mueve una carga de \( J_{\text{load}} = 8 \times 10^{-4} \, \text{kg·m}^2 \) mediante un engranaje con relación \( N_{\text{GB}} = 4 \) y eficiencia \( \eta = 0.95 \). Calcule la relación de inercia \( J_R \).
+Un motor con inercia $J_m = 2 \times 10^{-5} \, \text{kg·m}^2$ mueve una carga de $J_{\text{load}} = 8 \times 10^{-4} \, \text{kg·m}^2$ mediante un engranaje con relación $N_{\text{GB}} = 4$ y eficiencia $eta = 0.95$. Calcule la relación de inercia $J_R$
 
 **Solución:**  
 1. **Cálculo de inercia reflejada:**  
-   \[
-   J_{\text{ref}} = \frac{J_{\text{load}}}{\eta \cdot N_{\text{GB}}^2} = \frac{8 \times 10^{-4}}{0.95 \times 16} \approx 5.26 \times 10^{-5} \, \text{kg·m}^2
-   \]
+   
+   $J_{\text{ref}} = \frac{J_{\text{load}}}{\eta \cdot N_{\text{GB}}^2} = \frac{8 \times 10^{-4}}{0.95 \times 16} \approx 5.26 \times 10^{-5} \, \text{kg·m}^2$
 
 2. **Cálculo de \( J_R \):**  
-   \[
-   J_R = \frac{J_{\text{ref}} + J_{\text{on motor shaft}}}}{J_m} \approx \frac{5.26 \times 10^{-5} + 2 \times 10^{-5}}{2 \times 10^{-5}} = 3.63
-   \]
 
-**Conclusión:**  
+   $J_R = \frac{J_{\text{ref}} + J_{\text{on motor shaft}}}}{J_m} \approx \frac{5.26 \times 10^{-5} + 2 \times 10^{-5}}{2 \times 10^{-5}} = 3.63$
+
+**Conclusión:**
+
 La relación de inercia \( J_R \approx 3.63 \) cumple con el rango recomendado (\( J_R \leq 5 \)) para movimientos dinámicos.
 
 ---
 
-### Ejercicio 2: Selección de Motor  
-**Enunciado:**  
+### Ejercicio 2: Selección de Motor
+ 
+**Enunciado:**
+
 Una carga requiere un torque de 12 Nm a 100 rpm. La transmisión tiene una relación \( N_{\text{GB}} = 3 \) y eficiencia \( \eta = 0.9 \). Determine el torque mínimo requerido en el motor.
 
-**Solución:**  
-\[
-T_m = \frac{T_{\text{load}}}{\eta \cdot N_{\text{GB}}} = \frac{12}{0.9 \times 3} \approx 4.44 \, \text{Nm}
-\]
+**Solución:**
 
-**Consideraciones adicionales:**  
+$T_m = \frac{T_{\text{load}}}{\eta \cdot N_{\text{GB}}} = \frac{12}{0.9 \times 3} \approx 4.44 \, \text{Nm}$
+
+**Consideraciones adicionales:**
+
 - **Margen de seguridad:** Si se aplica un 20% adicional:  
-  \[
-  T_{\text{motor}} \geq 4.44 \times 1.2 \approx 5.33 \, \text{Nm}
-  \]
+
+  $T_{\text{motor}} \geq 4.44 \times 1.2 \approx 5.33 \, \text{Nm}$
+  
 - **Potencia requerida:**  
-  \[
-  P = T_m \cdot \omega = 4.44 \times \left(\frac{100 \times 2\pi}{60}\right) \approx 46.5 \, \text{W}
-  \]
+
+  $P = T_m \cdot \omega = 4.44 \times \left(\frac{100 \times 2\pi}{60}\right) \approx 46.5 \, \text{W}$
 
 ---
 
