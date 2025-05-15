@@ -1,5 +1,5 @@
 # Diseño de Transmisión en Control de Movimiento - Ampliado
-
+ 
 ## 1. Introducción  
 
 El diseño de transmisiones en sistemas de control de movimiento es una disciplina crítica en ingeniería mecatrónica y automatización. Estos sistemas son responsables de convertir eficientemente el movimiento rotacional generado por un motor en el movimiento lineal o rotacional deseado en la carga final, ya sea una herramienta industrial, un brazo robótico o cualquier otro actuador mecánico.
