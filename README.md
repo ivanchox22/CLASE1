@@ -116,7 +116,7 @@ Datos:
 Solución:
 1. Ecuación de relación de inercia:
 
-   $frac{J_{\text{ref}} + J_{\text{acople}}}}{1.5 \times 10^{-5}}$
+   $5 \geq \frac{J_{\text{ref}} + J_{\text{acople}}}}{1.5 \times 10^{-5}}$
     
 3. Asumiendo Jacople ≈ 0.5×10⁻⁵ kg·m²:
 
