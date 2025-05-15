@@ -163,7 +163,7 @@ graph TD
     Tm --> Jm[Inercia motor]
     Tl --> Jl[Inercia carga]
 
-
+```
 ---
 
 ## 4. Ejercicios Propuestos
