@@ -303,25 +303,26 @@ $T_{seguridad} = T_{motor} \times 1.25 = 5.29 \times 1.25 \approx 6.61 \, \text{
 
 ## 5. Conclusiones 
 
-## Importancia del diseño de transmisión en sistemas mecatrónicos
 - El diseño adecuado de transmisiones es crucial para garantizar precisión, eficiencia energética y robustez en sistemas de control de movimiento.
+
 - Factores como la inercia reflejada, el torque dinámico y la eficiencia mecánica determinan el rendimiento global del sistema.
 
-## Selección adecuada de componentes
 - El torque del motor debe considerar tanto el torque estático (fricción) como el dinámico (aceleración), aplicando un margen de seguridad (20-50%) según la aplicación.
+
 - La inercia equivalente afecta la estabilidad y respuesta del sistema, por lo que debe minimizarse para optimizar tiempos de posicionamiento.
 
-## Tipos de problemas de diseño y validación
 - En el diseño completo, es esencial definir perfiles de movimiento (trapezoidal, S-curve) y seleccionar motores con capacidad suficiente (torque RMS y pico).
+
 - En la validación de sistemas existentes, se deben analizar resonancias, sobrecalentamiento y márgenes de seguridad mediante simulación.
 
-## Consideraciones avanzadas
 - La eficiencia de la transmisión varía según el tipo (engranajes helicoidales: 95-98%, tornillo sinfín: 30-90%), afectando el consumo energético.
+
 - El backlash introduce errores de posicionamiento, que pueden mitigarse con engranajes anti-backlash o compensación en software.
+
 - Herramientas como Simscape Multibody permiten modelar y simular la dinámica completa del sistema antes de la implementación física.
 
-## Aplicación práctica en ejercicios
 - Los cálculos de torque reflejado y potencia demuestran que la relación de transmisión y la eficiencia impactan directamente en la selección del motor.
+
 - Incluir márgenes de seguridad (25-30%) asegura que el sistema opere correctamente bajo condiciones variables o cargas imprevistas.
 
 ## 6. Referencias Bibliográficas  
