@@ -190,7 +190,7 @@ $T_m = \frac{T_{\text{load}}}{\eta \cdot N_{\text{GB}}} = \frac{12}{0.9 \times 3
 
 ---
 
-## Ejercicio 2: Cálculo de Torque y Potencia del Motor
+### Ejercicio 2: Cálculo de Torque y Potencia del Motor
 
 ### Enunciado:
 
