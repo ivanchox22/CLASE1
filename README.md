@@ -162,6 +162,7 @@ graph TD
     Tl -->|η| Pérdidas
     Tm --> Jm[Inercia motor]
     Tl --> Jl[Inercia carga]
+```
 
 ---
 
