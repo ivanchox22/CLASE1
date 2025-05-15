@@ -180,7 +180,7 @@ Un motor con inercia $J_m = 2 \times 10^{-5} \, \text{kg·m}^2$ mueve una carga 
 
 2. **Cálculo de \( J_R \):**  
 
-   $J_R = \frac{J_{\text{ref}} + J_{\text{on motor shaft}}}}{J_m} \approx \frac{5.26 \times 10^{-5} + 2 \times 10^{-5}}{2 \times 10^{-5}} = 3.63$
+   $J_R = \frac{J_{\text{ref}} + J_{\text{on motor shaft}}}}{J_m} \approx \frac{5.26 \times 10^{-5} + 2 \times 10^{-5}}{2 \times 10^{-5}}$
 
 **Conclusión:**
 
