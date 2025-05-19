@@ -284,7 +284,7 @@ $omega_{motor} = 15.708 \times 4 = 62.832 \, \text{rad/s}$
 
 Ahora calculamos la potencia:
 
-$P = T_{motor} \times \omega_{motor} = 5.29 \times 62.832 \approx 332.4 \, \text{W}$
+$P = T_{motor} \times \omega_{motor} = 5.29 \times 62.832 \approx 332.4 \, \text{W}$ 
 
 ### 3. Torque con margen de seguridad
 
